@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<style>
+    #pdf-button{
+        cursor: not-allowed;
+    }
+    #pdf-button:hover{
+        background-color: gray;
+    }
+
+    .promo-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: 100%;
+    }
+
+    .promo{
+        background-color: white;
+        width: 12vw;
+        height: 14vw;
+        padding: 10px;
+        margin: 10px;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+    }
+
+    .promo img{
+        width: 12vw;
+    }
+
+    .promo:hover{
+        animation: swing ease-in-out 1s infinite alternate;
+    }
+
+    @media (max-width: 1080px) {
+
+        #content{
+            width: 90%;
+        }
+
+        .promo-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+    }
+
+        .promo{
+            width: 22vw;
+            height: 30vw;
+        }
+
+        .promo img{
+            width: 22vw;
+        }
+        }
+
+</style>
+<head>
+    <title>DGS Crime Zine</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="The Great Ace Attorney Crime Zine">
+    <meta name="keywords" content="The Great Ace Attorney, TGAA, Dai Gyakuten Saiban, DGS, Ace Attorney, art, fanart, collaboration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="content-grid">
+    <div id="header">
+        <h1>Extras</h1>
+    </div>
+    <div id="content">
+        <h2>Zine PDF</h2>
+        <button class="button" id="pdf-button">Coming soon</button>
+        
+        <h2>Digital Merch</h2>
+        Coming soon.
+
+        <h2>Promotional Artwork</h2>
+        <div class="promo-grid-container" id="promo-grid-parent"></div>
+    </div>
+    <div id="footer">
+        <a href="/d4c/zine"><button class="button">Zine</button></a>
+        <a href="/d4c/about"><button class="button">About</button></a>
+        <a href="/d4c/contributors"><button class="button">Contributors</button></a>
+    </div>
+</div>
+
+<script src="index.js"></script> 
+<script>
+    promos();
+  </script>
+</body>

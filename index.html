@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<style>
+    
+    #splash-img {
+        position: fixed;
+        margin-left: 5vw;
+        margin-bottom: -1vh;
+        bottom: 0;
+    }
+
+    #splash-img img{
+        height: 96vh;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        opacity: 0%;
+        animation: fadeInAnimation ease 2s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    #splash-img img:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.05);
+    }
+
+    #title1, #title2{
+        font-family: 'Special Elite','Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 5em;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        color: #B22D30;
+    }
+
+    #title1 {
+        position: absolute;
+        margin-left: 40vw;
+        margin-top: -10vh;
+        animation: title1Animation ease 0.75s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    #title2 {
+        position: absolute;
+        margin-left: 65vw;
+        margin-top: 100vh;
+        opacity: 0%;
+        animation: title2Animation ease 1s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    #title3 {
+        position: absolute;
+        margin-left: 50.5vw;
+        margin-top: 38vh;
+        color: #293042;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
+        opacity: 0%;
+        animation: fadeInAnimation ease 2s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    #home-footer {
+        position: fixed;
+        z-index: -1;
+        left: 0;
+        margin-bottom: -1vh;
+        bottom: 0;
+        width: 100%;
+        height: 45vh;
+        background-image: url("img/bg2.png");
+        border-top: solid 2vh #293042;
+    }
+
+    #buttons {
+        position: relative;
+        margin-top: 2vh;
+        margin-left: 48vw;
+        width: 30vw;
+        text-align: center;
+        opacity: 0%;
+        animation: fadeInAnimation ease 2s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    #zine-button{
+        width: 100%;
+        font-size: 2em;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        cursor: not-allowed;
+    }
+
+    #zine-button:hover{
+        background-color: gray;
+    }
+
+    /* ANIMATIONS */
+
+    @keyframes title1Animation {
+        0% {
+            margin-left: 40vw;
+            margin-top: -10vw;
+        }
+        100% {
+            margin-left: 40vw;
+            margin-top: 22vh;
+        }
+    }
+
+    @keyframes title2Animation {
+        0% {
+            opacity: 0%;
+            margin-left: 60vw;
+            margin-top: 100vh;
+        }
+        20%{
+            opacity: 1;
+        }
+        100% {
+            margin-left: 50vw;
+            margin-top: 30vh;
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 1080px) {
+
+        #splash-img {
+        position: fixed;
+        margin-left: 5vw;
+        margin-bottom: 45vh;
+        bottom: 0;
+    }
+
+    #splash-img img{
+        height: 50vh;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        opacity: 0%;
+        animation: fadeInAnimation ease 2s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    }
+
+</style>
+<head>
+    <title>DGS Crime Zine</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="The Great Ace Attorney Crime Zine">
+    <meta name="keywords" content="The Great Ace Attorney, TGAA, Dai Gyakuten Saiban, DGS, Ace Attorney, art, fanart, collaboration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div id="splash-img"><img src="img/splash.webp"></div>
+    <div id="title1">Dirty Deeds</div><div id="title2">Done Dirt Cheap</div><div id="title3">The Great Ace Attorney Crime Zine</div>
+    <div id="home-footer">
+        <div id="buttons">
+            <button class="button" id="zine-button">COMING SOON</button>
+            <br>
+            <a href="/d4c/extras"><button class="button">Extras</button></a>
+            <a href="/d4c/about"><button class="button">About</button></a>
+            <a href="/d4c/contributors"><button class="button">Contributors</button></a>
+        </div>
+    </div>
+
+</body>
