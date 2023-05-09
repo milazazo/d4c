@@ -1,7 +1,7 @@
 ## About
 Website for [*Dirty Deeds Done Dirt Cheap*](https://tgaacrimezine.carrd.co/), a DGS crime-themed zine. Planned to be complete in August.
 
-I'm not the organizer of the zine itself, just setting up the site. If you want to edit it, please message me so that I can add you as a collaborator to the repository. 
+I'm not the organizer of the zine itself, just setting up the site. If you want to edit it, message me so that I can add you as a collaborator to the repository (don't bother with forking...) 
 
 ## To-do
 - [ ] Update colors to match zine interior (whenever formatting is done)
